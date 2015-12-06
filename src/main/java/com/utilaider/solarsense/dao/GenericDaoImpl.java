@@ -32,8 +32,8 @@ public abstract class GenericDaoImpl<PK extends Serializable, T> implements
 
 	@SuppressWarnings("unchecked")
 	public GenericDaoImpl() {
-		this.persistentClass = (Class<? extends T>) ((ParameterizedType) this
-				.getClass().getGenericSuperclass()).getActualTypeArguments()[1];
+		this.persistentClass = (Class<? extends T>) ((ParameterizedType) this.getClass()
+				.getGenericSuperclass()).getActualTypeArguments()[1];
 	}
 
 	protected Session getSession() {

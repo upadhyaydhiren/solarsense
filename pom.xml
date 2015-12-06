@@ -150,6 +150,14 @@
 		</dependency>
 
 		<!-- End JTA -->
+		<!-- FTP Client -->
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.3</version>
+		</dependency>
+
+		<!-- End FTP Client -->
 	</dependencies>
 	<build>
 		<finalName>solarsense</finalName>
